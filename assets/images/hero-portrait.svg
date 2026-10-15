@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 580" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8F8F8" />
+      <stop offset="100%" stop-color="#EDEDED" />
+    </linearGradient>
+    <clipPath id="portraitClip">
+      <rect x="0" y="0" width="500" height="580" rx="20" />
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#portraitClip)">
+    <!-- Neutral Editorial Studio Background -->
+    <rect width="500" height="580" fill="url(#bgGrad)" />
+    
+    <!-- Subtle architectural background geometry -->
+    <rect x="40" y="40" width="420" height="500" fill="none" stroke="#E2E2E2" stroke-width="1.5" stroke-dasharray="4 4" rx="12" />
+    <circle cx="430" cy="90" r="45" fill="#F1F1F1" />
+    <path d="M 0,380 L 160,380 L 160,580 L 0,580 Z" fill="#EAEAEA" opacity="0.6" />
+
+    <!-- Character / Student Illustration (Rewan Khaled - AI Student) -->
+    <!-- Torso / Blazer in Dark Charcoal (#2D2D2D) -->
+    <path d="M 130,580 C 130,470 170,425 210,405 L 250,450 L 290,405 C 330,425 370,470 370,580 Z" fill="#2D2D2D" />
+    
+    <!-- Inner Shirt / Top in Off-White & Soft Coral Accent -->
+    <path d="M 210,405 L 250,470 L 290,405 Z" fill="#FFFFFF" />
+    <polygon points="247,430 253,430 250,455" fill="#FF6250" />
+    
+    <!-- Neck -->
+    <path d="M 225,350 L 275,350 L 270,415 L 230,415 Z" fill="#E6BEA2" />
+    <path d="M 228,380 C 238,400 262,400 272,380 L 270,415 L 230,415 Z" fill="#D9AE93" opacity="0.6" />
+
+    <!-- Head / Face -->
+    <ellipse cx="250" cy="305" rx="55" ry="68" fill="#E8C4A9" />
+    
+    <!-- Facial Features - Minimal Editorial Line Art -->
+    <!-- Eyes -->
+    <ellipse cx="230" cy="300" rx="4.5" ry="5.5" fill="#2D2D2D" />
+    <ellipse cx="270" cy="300" rx="4.5" ry="5.5" fill="#2D2D2D" />
+    <circle cx="232" cy="298" r="1.5" fill="#FFFFFF" />
+    <circle cx="272" cy="298" r="1.5" fill="#FFFFFF" />
+    
+    <!-- Eyebrows -->
+    <path d="M 220,288 C 226,285 236,286 242,290" fill="none" stroke="#2D2D2D" stroke-width="2.5" stroke-linecap="round" />
+    <path d="M 258,290 C 264,286 274,285 280,288" fill="none" stroke="#2D2D2D" stroke-width="2.5" stroke-linecap="round" />
+
+    <!-- Nose -->
+    <path d="M 250,300 L 247,318 L 253,318" fill="none" stroke="#C5967B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- Gentle Smile -->
+    <path d="M 240,332 C 246,339 254,339 260,332" fill="none" stroke="#B86E63" stroke-width="2.5" stroke-linecap="round" />
+
+    <!-- Hair / Hijab / Styling - Elegant minimalist drape in Charcoal & Soft Warm Gray -->
+    <path d="M 250,205 C 195,205 175,255 175,325 C 175,395 190,440 215,445 C 220,410 220,380 225,360 C 220,320 220,250 250,250 C 280,250 280,320 275,360 C 280,380 280,410 285,445 C 310,440 325,395 325,325 C 325,255 305,205 250,205 Z" fill="#2D2D2D" />
+    <path d="M 195,275 C 190,340 200,420 220,438 C 215,385 210,335 212,285 Z" fill="#222222" opacity="0.4" />
+    
+    <!-- Minimalist modern glasses (optional academic touch - very clean geometric) -->
+    <rect x="216" y="291" width="28" height="18" rx="6" fill="none" stroke="#2D2D2D" stroke-width="2" />
+    <rect x="256" y="291" width="28" height="18" rx="6" fill="none" stroke="#2D2D2D" stroke-width="2" />
+    <line x1="244" y1="299" x2="256" y2="299" stroke="#2D2D2D" stroke-width="2" />
+
+    <!-- Laptop / Tech workspace hint in bottom foreground -->
+    <rect x="180" y="525" width="140" height="55" rx="6" fill="#FFFFFF" stroke="#2D2D2D" stroke-width="2" />
+    <line x1="200" y1="545" x2="300" y2="545" stroke="#E2E2E2" stroke-width="2" stroke-linecap="round" />
+    <line x1="200" y1="555" x2="270" y2="555" stroke="#E2E2E2" stroke-width="2" stroke-linecap="round" />
+    <!-- Small code cursor -->
+    <rect x="274" y="552" width="6" height="5" fill="#009379" />
+
+    <!-- Floating subtle editorial badge inside illustration -->
+    <g transform="translate(60, 480)">
+      <rect x="0" y="0" width="135" height="34" rx="17" fill="#FFFFFF" stroke="#EAEAEA" stroke-width="1" />
+      <circle cx="16" cy="17" r="5" fill="#009379" />
+      <text x="28" y="21" font-family="'Epilogue', sans-serif" font-size="11" font-weight="600" fill="#2D2D2D" letter-spacing="0.3">AI &amp; ML Student</text>
+    </g>
+  </g>
+</svg>

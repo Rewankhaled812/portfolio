@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <clipPath id="cardClip3">
+      <rect x="0" y="0" width="600" height="400" rx="16" />
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#cardClip3)">
+    <!-- Base Background -->
+    <rect width="600" height="400" fill="#F8F8F8" />
+    <rect x="20" y="20" width="560" height="360" rx="12" fill="#FFFFFF" stroke="#EBEBEB" stroke-width="1.5" />
+
+    <!-- Top Bar -->
+    <rect x="20" y="20" width="560" height="52" fill="#FFFFFF" />
+    <line x1="20" y1="72" x2="580" y2="72" stroke="#EBEBEB" stroke-width="1" />
+    <text x="44" y="52" font-family="'Epilogue', sans-serif" font-size="13" font-weight="700" fill="#2D2D2D">Air Quality Forecasting · EDA &amp; Feature Engineering</text>
+    
+    <rect x="440" y="34" width="115" height="26" rx="13" fill="#009379" />
+    <text x="456" y="51" font-family="'Epilogue', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF">Time-Series EDA</text>
+
+    <!-- Main Chart: Air Quality Trend (PM2.5 & NO2) -->
+    <g transform="translate(45, 95)">
+      <rect x="0" y="0" width="320" height="255" rx="8" fill="#FAFAFA" stroke="#E5E5E5" stroke-width="1" />
+      <text x="18" y="26" font-family="'Epilogue', sans-serif" font-size="11" font-weight="700" fill="#2D2D2D">Pollutant Temporal Trends (AQI Index)</text>
+
+      <!-- Grid lines -->
+      <line x1="35" y1="55" x2="295" y2="55" stroke="#EAEAEA" stroke-width="1" stroke-dasharray="2 2" />
+      <line x1="35" y1="95" x2="295" y2="95" stroke="#EAEAEA" stroke-width="1" stroke-dasharray="2 2" />
+      <line x1="35" y1="135" x2="295" y2="135" stroke="#EAEAEA" stroke-width="1" stroke-dasharray="2 2" />
+      <line x1="35" y1="175" x2="295" y2="175" stroke="#EAEAEA" stroke-width="1" stroke-dasharray="2 2" />
+      <line x1="35" y1="215" x2="295" y2="215" stroke="#D1D1D1" stroke-width="1.5" />
+
+      <!-- Curve 1: Teal Trend (Cleaned signal) -->
+      <path d="M 35,180 C 60,165 80,110 110,120 C 140,130 160,70 190,85 C 220,100 250,140 280,110 L 295,125" fill="none" stroke="#009379" stroke-width="2.5" />
+      
+      <!-- Curve 2: Coral Spikes (Raw pollution peaks) -->
+      <path d="M 35,160 Q 60,190 90,145 T 145,170 T 200,60 T 255,120 T 295,90" fill="none" stroke="#FF6250" stroke-width="2" stroke-dasharray="4 2" />
+
+      <!-- Data markers -->
+      <circle cx="110" cy="120" r="4" fill="#009379" />
+      <circle cx="190" cy="85" r="4" fill="#009379" />
+      <circle cx="200" cy="60" r="4" fill="#FF6250" />
+
+      <!-- Legend -->
+      <circle cx="35" cy="235" r="4" fill="#009379" />
+      <text x="45" y="239" font-family="'Epilogue', sans-serif" font-size="9.5" fill="#555555">Moving Avg (PM2.5)</text>
+      
+      <circle cx="160" cy="235" r="4" fill="#FF6250" />
+      <text x="170" y="239" font-family="'Epilogue', sans-serif" font-size="9.5" fill="#555555">Observed Peaks</text>
+    </g>
+
+    <!-- Right Side: Feature Correlation & Stats -->
+    <g transform="translate(385, 95)">
+      <!-- Stats block -->
+      <rect x="0" y="0" width="170" height="120" rx="8" fill="#FAFAFA" stroke="#E5E5E5" stroke-width="1" />
+      <text x="14" y="24" font-family="'Epilogue', sans-serif" font-size="11" font-weight="700" fill="#2D2D2D">Dataset Insights</text>
+      
+      <text x="14" y="48" font-family="'Epilogue', sans-serif" font-size="10" fill="#666666">Features Cleaned:</text>
+      <text x="14" y="64" font-family="'Epilogue', sans-serif" font-size="12" font-weight="700" fill="#2D2D2D">18 Parameters</text>
+
+      <text x="14" y="88" font-family="'Epilogue', sans-serif" font-size="10" fill="#666666">Imputation Method:</text>
+      <text x="14" y="104" font-family="'Epilogue', sans-serif" font-size="11" font-weight="600" fill="#009379">KNN &amp; Interpolation</text>
+
+      <!-- Heatmap preview box -->
+      <g transform="translate(0, 132)">
+        <rect x="0" y="0" width="170" height="123" rx="8" fill="#2D2D2D" />
+        <text x="14" y="24" font-family="'Epilogue', sans-serif" font-size="10.5" font-weight="700" fill="#FFFFFF">Feature Correlation</text>
+        
+        <!-- 3x3 heatmap grid representation -->
+        <rect x="14" y="36" width="22" height="22" fill="#FF6250" rx="2" />
+        <rect x="40" y="36" width="22" height="22" fill="#FFB5B0" rx="2" />
+        <rect x="66" y="36" width="22" height="22" fill="#009379" rx="2" />
+
+        <rect x="14" y="62" width="22" height="22" fill="#FFB5B0" rx="2" />
+        <rect x="40" y="62" width="22" height="22" fill="#FF6250" rx="2" />
+        <rect x="66" y="62" width="22" height="22" fill="#FFD66B" rx="2" />
+
+        <rect x="14" y="88" width="22" height="22" fill="#009379" rx="2" />
+        <rect x="40" y="88" width="22" height="22" fill="#FFD66B" rx="2" />
+        <rect x="66" y="88" width="22" height="22" fill="#FF6250" rx="2" />
+
+        <text x="96" y="55" font-family="'Epilogue', sans-serif" font-size="9" fill="#DDDDDD">Lag Features</text>
+        <text x="96" y="75" font-family="'Epilogue', sans-serif" font-size="9" fill="#DDDDDD">Rolling Stats</text>
+        <text x="96" y="95" font-family="'Epilogue', sans-serif" font-size="9" fill="#009379">ML Ready</text>
+      </g>
+    </g>
+  </g>
+</svg>
